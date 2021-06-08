@@ -5,7 +5,7 @@ Download the app from https://drive.google.com/file/d/1cH62cUyRDzKsTwmz2wyEBzMDg
 Built an Android App using Java with the functionality to track the spread of novel Corona Virus (COVID-19) in 11 different Countries around the world and all states in India using REST API and Retrofit library.
 
 ## Permission
-On Android versions prior to Android 6.0, this ChatApp requires the following permissions:
+On Android versions prior to Android 6.0, this Covid-19 Tracker App requires the following permissions:
 - Full Network Access.
 - Access to messaging.
 - Access to Dialer.
