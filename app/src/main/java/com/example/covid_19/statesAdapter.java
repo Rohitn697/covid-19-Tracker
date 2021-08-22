@@ -47,11 +47,12 @@ public class statesAdapter extends RecyclerView.Adapter<statesAdapter.StatesView
 
             holder.itemView.setOnClickListener(v->{
                 stateConfirmedData = NumberFormat.getInstance().format(Integer.parseInt(data.getConfirmed()));
-                stateRecoveredData = NumberFormat.getInstance().format(Integer.parseInt(data.getRecovered()));
-                stateActiveData = NumberFormat.getInstance().format(Integer.parseInt(data.getActive()));
+                stateRecoveredData = NumberFormat.getInstance().format(Integer.parseInt(data.getCases28Days()));
+                stateActiveData = NumberFormat.getInstance().format(Integer.parseInt(data.getDeaths28Days())) ;
                 stateDeathsData = NumberFormat.getInstance().format(Integer.parseInt(data.getDeaths()));
                 stateName = data.getProvinceState();
                 lastUpdated = data.getLastUpdate();
+
 
                 Intent i = new Intent(context, StatesStatistics.class);
                 i.putExtra("provinceState",stateName);

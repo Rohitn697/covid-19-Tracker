@@ -13,18 +13,27 @@ public class StatesData {
    private String lastUpdate;
    private String provinceState;
    private String active;
-   private String recovered;
+   private String deaths28Days;
    private String deaths;
    private String confirmed;
+   private String cases28Days;
 
-
-    public StatesData(String lastUpdate, String provinceState, String active, String recovered, String deaths, String confirmed) {
+    public StatesData(String lastUpdate, String provinceState, String active, String deaths28Days, String deaths, String confirmed, String cases28Days) {
         this.lastUpdate = lastUpdate;
         this.provinceState = provinceState;
         this.active = active;
-        this.recovered = recovered;
+        this.deaths28Days = deaths28Days;
         this.deaths = deaths;
         this.confirmed = confirmed;
+        this.cases28Days = cases28Days;
+    }
+
+    public String getCases28Days() {
+        return cases28Days;
+    }
+
+    public void setCases28Days(String cases28Days) {
+        this.cases28Days = cases28Days;
     }
 
     public String getLastUpdate() {
@@ -51,12 +60,12 @@ public class StatesData {
         this.active = active;
     }
 
-    public String getRecovered() {
-        return recovered;
+    public String getDeaths28Days() {
+        return deaths28Days;
     }
 
-    public void setRecovered(String recovered) {
-        this.recovered = recovered;
+    public void setDeaths28Days(String deaths28Days) {
+        this.deaths28Days = deaths28Days;
     }
 
     public String getDeaths() {
